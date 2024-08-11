@@ -13,9 +13,9 @@ public class Movie {
     protected int year;
     protected int votes;
     private double rating;
+    private String descripcion;
     @Column(name = "image_url")
     protected String imageUrl;
-
 
 
     public long getId() {
@@ -64,5 +64,13 @@ public class Movie {
 
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 }
